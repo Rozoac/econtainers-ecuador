@@ -1,0 +1,7 @@
+.subir {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: blue;
+  z-index: 99;
+}

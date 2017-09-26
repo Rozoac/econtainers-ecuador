@@ -1,37 +1,64 @@
-            @font-face {
-                font-family: biko-black;
-                src: url('assets/fonts/biko/Biko_Black.otf');
-            }
-            @font-face {
-                font-family: biko-bold;
-                src: url('assets/fonts/biko/Biko_Bold.otf');
-            }
-            @font-face {
-                font-family: biko-light;
-                src: url('assets/fonts/biko/Biko_Light-Restricted.otf');
-            }
-            @font-face {
-                font-family: biko-regular;
-                src: url('assets/fonts/biko/Biko_Regular.otf');
-            }
-
-
-h1, button{
-     font-family: biko-black;	
-   
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+h1, button {
+  font-family: 'Roboto', sans-serif;
 }
 
-h2{
-    font-family: biko-regular;
+h2, h3, h4, p, button {
+  font-family: 'Roboto', sans-serif!important;
 }
 
 .text__background {
-    font-family: biko-black;	
-    position: absolute;
-	left: 72px;
-	bottom: -55px;
-	color: #00cdfb;
-	font-size: 80px;
-	font-weight: 700;
+  font-family: biko-black;
+  position: absolute;
+  left: 72px;
+  bottom: -55px;
+  color: #00cdfb;
+  font-size: 80px;
+  font-weight: 700;
 }
 
+/*movil*/
+.text__background-movil {
+  position: absolute;
+  left: 35px;
+  bottom: -32px;
+  color: #76a1e7;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+button {
+  font-family: biko-regular;
+}
+
+a, label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+
+.animatedd {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}

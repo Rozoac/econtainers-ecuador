@@ -1,0 +1,199 @@
+.img-principal{
+  background-image: url("/assets/imgs/banner-barco.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+
+
+}
+.barco{
+  position: absolute;
+  left: 600px;
+top: 310px;
+  }
+.carga{
+  position: absolute;
+  right: 0;
+top: -350px;
+   animation-duration: 2s  ;
+
+  }
+
+  .texto-1{
+    position: relative;
+    display: inline-block!important;
+    top: 230px;
+    left: 100px;
+    color: white;
+    font-size: 3.5em;
+
+
+  }
+  .texto-2{
+    display: inline-block!important;
+
+    position: relative;
+    top: 230px;
+    left: 100px;
+    color: #00a5ff;
+    font-size: 3.5em;
+    font-weight: bold;
+
+  }
+
+  .texto-principal{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  }
+
+  .img-seccion3{
+    margin-top: 350px;
+    background: #001e29;
+    height: 90vh;
+
+  }
+
+  .img-seccion3 p{
+    top: 220px;
+    position: relative;
+    color: white;
+    line-height: 2.5;
+  }
+
+  h3{
+    font-size: 1.5em;
+
+  }
+
+  .texto-s2{
+    line-height: 2.2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+  }
+
+  /**seccion 6 */
+
+  .imagen-1 {
+    padding: 60px;
+  }
+
+  li{
+    font-size: .9rem;
+font-weight: 300;
+  }
+
+  ul{
+    padding-left: 0;
+    font-family: roboto;
+  }
+
+  .imagen-2 {
+    background: url("/assets/imgs/seccion-6a.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .imagen-3 {
+    background: url("/assets/imgs/seccion-6c.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+
+  .imagen-4 {
+    height: 50vh;
+    padding: 60px 60px;
+  }
+
+  .nosotros {
+    color: #22a3ff;
+    font-family: biko;
+  }
+
+  h4 {
+    font-family: biko-regular;
+    font-size: 1.3em;
+  }
+
+  .col-sm-6 p {
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 230%;
+  }
+
+  .section-6{
+    padding-top: 100px;
+  }
+
+
+
+/*FOOTER*/
+.footer {
+  position: relative;
+  z-index: 5;
+  height: 30vh;
+}
+
+@media (min-width: 1200px) {
+  .containerf {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+}
+
+span {
+  font-size: .7em;
+}
+
+.padding-40 {
+  padding-top: 40px!important;
+}
+
+.margin-0{
+  margin:0!important;
+
+}
+
+.margin-top{
+  margin-top: 50px;
+}
+
+i {}
+
+.redes-footer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%!important;
+
+}
+
+.sgs{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+@media (max-width: 576px) {
+  .carga[_ngcontent-c3] {
+    width: 320px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+.col-7 {
+    font-size: .8em;
+  }
+
+  .img-seccion3[_ngcontent-c3]{
+    margin-top: 0;
+  }
+
+}
+
+h5{
+  font-size: 1.5em;
+  color: #1252da;
+}

@@ -1,0 +1,14 @@
+:host app-footer + * {
+        display: block;
+        border: 10px solid black;
+        background: blue;
+    }
+
+body{
+    cursor: url("http://i2.cdn.cnn.com/cnnnext/dam/assets/160927210830-tk-ah0927-exlarge-169.jpg");
+}
+
+.hide{
+  display: none;
+
+}

@@ -1,28 +1,148 @@
+<nav class="nav navbar-light bg-faded sombra hidden-sm-down">
+  <div class="container nav-principal">
+    <a class="menu" href="">
+    </a>
+    <a class="navbar-brand" href="">
+  </a>
+  </div>
+</nav>
+
+<nav class="nav2 navbar-light bg-faded hidden-sm-down">
+  <div class="container nav-principal2">
+    <a class="navbar-brand">
+      <div class="idioma">
+        <a href="#portafolio" class="portafolio-a btn btn-secondary " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Portafolio
+       </a>
+        <a href="#9" class="idioma-a btn btn-secondary " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contacto
+       </a>
+        <div class="dropdown ">
+          <button class="idioma-b btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Idioma
+        </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Español</a>
+            <a class="dropdown-item" href="#">Ingles</a>
+          </div>
+        </div>
+        <form class="lupa" id="demo-2">
+          <input type="search" placeholder="Search">
+        </form>
+      </div>
+    </a>
+  </div>
+</nav>
+
 <nav class="nav navbar-light bg-faded">
-  <div class="container">
-    <a class="menu" href="#">
-      MENÚ
-      <img class="burguer-menu" src="assets/imgs/burguer-menu.png" alt="">
+  <div class="container nav-principal">
+    <a class="menu " (click)='menu()' id="burguerButton">
+      <span class="hidden-sm-down">MENÚ</span>
+      <i class="fa fa-bars fa-3x burguer-button"  aria-hidden="true" id="burguer-btn"  ></i>
     </a>
 
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" (click)='eventoMenu1()' [routerLink]="['/home']">
       <img class="logo" src="assets/imgs/logo.png" alt="">
   </a>
 
+  </div>
+</nav>
 
-    <div class="idioma">
-      <a href="#" class="idioma-a">Contacto</a>
-      <a href="#" class="idioma-b">Ingles</a>
-      <a href="">
-     <img src="assets/imgs/lupa.png" alt="">
-    </a>
+
+
+<div class="menu-principal-1 container hidden-sm-down" id="menu-1">
+  <div class="row menu-1-s9">
+    <div class="col-6">
+      <ul>
+        <li><a (click)='eventoMenu()' [routerLink]="['quienes-somos']">Nosotros</a></li>
+        <li><a href="https://blog.econtainerscolombia.com">Blog</a></li>
+        <li><a (click)='eventoMenu()' [routerLink]="['compromiso-empresarial']">Compromiso Empresarial</a></li>
+        <li><a href="https://blog.econtainerscolombia.com">Contactanos</a></li>
+        <li><a (click)='eventoMenu()' [routerLink]="['clientes']"> Ingreso Clientes</a></li>
+
+
+      </ul>
+
+    </div>
+    <div class="col-6">
+      <ul>
+        <li><a (click)='eventoMenu()' [routerLink]="['trabaja']">Trabaja con nosotros</a></li>
+        <li><a>Intranet</a></li>
+        <li><a (click)='eventoMenu()' [routerLink]="['pqrs']">PQRS</a></li>
+        <li><a (click)='eventoMenu()' [routerLink]="['portafolio-page']">Portafolio</a></li>
+
+      </ul>
 
     </div>
 
   </div>
 
+</div>
+<div class="menu-principal-movil container hidden-md-up" id="menu-m">
+  <div class="row menu-1-s9">
+    <div class="col-12">
+      <ul>
+        <li><a (click)='eventoMenu()' [routerLink]="['quienes-somos']">Nosotros</a></li>
+        <li><a href="https://blog.econtainerscolombia.com">Blog</a></li>
+        <li><a (click)='eventoMenu()' [routerLink]="['trabaja']">Trabaja con nosotros</a></li>
+        <li><a>Intranet</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="menu-principal-1-movil container" id="menu-1">
+  <div class="row menu-1-s9">
+    <div class="col-6">
+      <ul>
+        <li><a (click)='eventoMenu()' [routerLink]="['quienes-somos']">Quienes Somos</a></li>
+        <li><a href="https://blog.econtainerscolombia.com">Blog</a></li>
+        <li></li>
+
+      </ul>
+
+    </div>
+    <div class="col-6">
+      <ul>
+        <li><a (click)='eventoMenu()' [routerLink]="['trabaja']">Trabaja con nosotros</a></li>
+        <li><a>Intranet</a></li>
+        <li></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="menu-principal-2 container hidden-sm-down" id="menu-2">
+  <div class="row menu-2-s9">
+    <div class="col-7">
+      <h3>Productos <br>y servicios</h3>
+    </div>
+
+    <div class="col-5">
+      <form class="newsletter" action="index.html" method="post">
+        <label>Suscribirse a Newsletter</label>
+        <input type="email" name="" value="">
+      </form>
+      <span>Siguenos en:</span>
+      <div class="redes-sociales fa-2x">
+        <a href="https://www.facebook.com/econtainerscolombia/">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/EContainersCol">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/econtainers/">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCc9_pDkvmipTo5aXavS9inQ">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
 
 
-
-
-</nav>
+</div>

@@ -1,0 +1,172 @@
+.img-principal {
+  background: url("/assets/imgs/compromiso-empresarial/2.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+align-items: center;
+}
+
+.trabaja {
+  padding-top: 70px;
+}
+
+.texto-principal {
+  color: white;
+text-align: center;
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.texto-1 {
+  font-size: 3em;
+}
+
+.texto-2 {
+  font-size: 1.3em;
+  font-weight: lighter;
+  line-height: 1.4;
+}
+
+
+/*seccion 2*/
+
+.seccion-2 {
+  padding-top: 50px;
+}
+
+.seccion-2 span {
+  font-size: 2.5em;
+  color: #3f3d3f;
+}
+
+.seccion-2 .row {
+  padding-top: 50px;
+}
+.footer {
+  position: relative;
+  z-index: 5;
+  height: 30vh;
+}
+
+@media (min-width: 1200px) {
+  .containerf {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+}
+
+span {
+  font-size: .7em;
+}
+
+.padding-40 {
+  padding-top: 40px!important;
+}
+
+.margin-0{
+  margin:0!important;
+
+}
+
+
+.uno{
+  position: relative;
+  left: 80px;
+  z-index: 1;
+  height: 600px;
+
+
+}
+
+.dos{
+  height: 680px;
+
+  bottom: 40px;
+position: relative;
+z-index: 2;
+
+}
+
+
+.dos img{
+  height: 50%;
+}
+.dos h2{
+  padding-top: 30px;
+  text-align: center;
+  color: #60a4be;
+}
+
+.dos p {
+  margin: 40px;
+  font-size: .8em;
+  text-align: center;
+
+}
+
+.uno h2 {
+  padding: 40px 40px;
+  color: #cca050;
+}
+
+.uno p{
+  padding: 0 90px 40px 40px;
+  font-size: .8em;
+  text-align: center;
+
+}
+
+.tres h2{
+  padding: 20px 150px;
+  color: #ba8193;
+
+}
+
+.tres{
+  position: relative;
+  right: 80px;
+  z-index: 1;
+  height: 600px;
+}
+
+.tres p{
+  padding: 0 40px 40px 100px;
+  font-size: .8em;
+  text-align: center;
+
+}
+
+.cuadros{
+  background: transparent;
+  bottom: 50px;
+  position: relative;
+  display:block;
+  display: flex;
+  padding: 0;
+}
+
+.cuadros div{
+  -webkit-box-shadow: 0px 6px 19px 2px rgba(129,129,129,1);
+-moz-box-shadow: 0px 6px 19px 2px rgba(129,129,129,1);
+box-shadow: 0px 6px 19px 2px rgba(129,129,129,1);
+  width: 400px;
+  background: white;
+
+}
+
+.cuadros div img{
+  background-size: cover;
+  width: 100%;
+}
+
+.fondo{
+  background: #e0e1e6;
+}
+
+h2{
+  font-size: 1.3em;
+}
+
+.cuadros img {
+  border-top: 4px solid white;
+}

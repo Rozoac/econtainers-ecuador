@@ -1,0 +1,39 @@
+<div class="contenedor trabaja">
+  <!-- Seccion principal -->
+  <div class="container-fluid img-principal">
+
+    <div class="texto-principal container">
+      <h2 class="texto-1">Trabaja con nosotros </h2>
+      <h2 class="texto-2 hidden-sm-down">En E-Containers Colombia buscamos personas que se esfuerzan por lograr sus metas, de manera responsable y ética. Queremos su compromiso y creatividad para que juntos, podamos transformar la sociedad de una manera positiva. </h2>
+    </div>
+  </div>
+
+  <div class="container seccion-2">
+
+    <span>¿Dónde te gustaría trabajar?</span>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card-columns">
+          <div class="card wow flipInX" *ngFor="let trabajo of trabajos">
+            <div class="card-block ">
+              <h4 class="card-title">{{trabajo.nombre}}</h4>
+              <p class="card-text">{{trabajo.bio}}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+<app-formulario-2></app-formulario-2>
+  </div>
+
+
+
+</div>

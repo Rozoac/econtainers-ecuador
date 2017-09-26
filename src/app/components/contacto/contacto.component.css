@@ -1,0 +1,29 @@
+.datos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+}
+
+.datos-11 {
+  flex-direction: column;
+}
+
+.h3-s11 {
+  color: #0178de;
+}
+
+.section-11 {
+  height: 100%;
+  z-index: 5;
+  background: #21232f;
+}
+
+h3{
+  font-size: 1.2em;
+font-weight: lighter;
+}
+
+.p-s7 {
+    font-size: .8em;
+}

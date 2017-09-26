@@ -1,57 +1,378 @@
-.nav{
-    z-index: 99;
-    width: 55%;
-    display: flex;
-    flex-direction: row-reverse;
-    top:0;
-    position:fixed!important;
-    transition-duration: .8s;
-    height: 10vh;
-    z-index: 999;
+.nav {
+  width: 55%;
+  display: flex;
+  flex-direction: row-reverse;
+  top: 0;
+  position: fixed!important;
+  transition-duration: .3s;
+  height: 10vh;
+  z-index: 99;
+  background: white;
+}
+
+.nav2 {
+  z-index: 99;
+  width: 45%;
+  display: flex;
+  flex-direction: row-reverse;
+  top: 0;
+  position: fixed!important;
+  right: 0;
+  transition-duration: .3s;
+  height: 10vh;
+  background: transparent;
+}
+
+.nav-principal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-principal2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pined {
+  width: 100%;
+  transition-duration: .3s;
+}
+
+.logo {
+  top: 4px;
+  left: 430px;
+  position: absolute;
+  max-width: 250px;
+}
+
+.burguer-menu {
+  max-width: 45px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  color: black;
+  z-index: 1;
+}
+
+.menu-scroll {
+  margin-right: 70px;
+}
+
+.idioma {
+  left: 1000px;
+  display: flex;
+}
+
+.idioma-scroll {
+  color: black!important;
+  transition-delay: .1s;
+}
+
+.idioma a {
 
 }
 
-.pined{
+.idioma-b {
+  margin: 0 8px 0 0;
+}
+.idioma-a {
+  margin: 0 8px 0 0;
+}
+
+a {
+  color: white;
+}
+
+.lupa {
+  transition-delay: .1s;
+}
+
+.dropdown-item {
+  color: black;
+}
+
+.btn-secondary {
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+  color: black;
+  background-color: transparent;
+  background-image: none;
+}
+
+.dropdown-item:hover {
+  color: #00befa;
+  background: transparent;
+}
+
+.negro {
+  color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F60;
+}
+
+input {
+  outline: none;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input::-webkit-search-decoration, input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type=search] {
+  background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1.5px transparent;
+  padding: 0 10px 0 32px;
+  width: 55px;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+input[type=search]:focus {
+  width: 130px;
+  background-color: #fff;
+  border-color: #00befa;
+  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+}
+
+input:-moz-placeholder {
+  color: #999;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+
+/* Demo 2 */
+
+#demo-2 input[type=search] {
+  width: 15px;
+  padding-left: 10px;
+  color: transparent;
+  cursor: pointer;
+}
+
+#demo-2 input[type=search]:hover {
+  background-color: #fff;
+}
+
+#demo-2 input[type=search]:focus {
+  width: 130px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+}
+
+#demo-2 input:-moz-placeholder {
+  color: transparent;
+}
+
+#demo-2 input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.sombra {
+  -webkit-box-shadow: 0px 10px 15px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 15px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 15px -16px rgba(0, 0, 0, 0.75);
+}
+
+.menu-principal-1 {
+  background: #0079d5;
+  z-index: 98;
+  position: fixed;
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  left: -100%;
+  transition: .3s;
+}
+
+.menu-principal-1.active {
+  left: 0%;
+}
+.menu-principal-movil {
+      padding-top: 160px;
+  background: #1a3966;
+  z-index: 98;
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  left: -100%;
+  transition: .3s;
+}
+
+.menu-principal-movil.active {
+  left: 0%;
+}
+.menu-principal-1-movil {
+  background: #0079d5;
+  z-index: 98;
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  left: -100%;
+  transition: .3s;
+}
+
+.menu-principal-1-movil.active {
+  left: 0%;
+}
+
+.menu-principal-2.active {
+  right: 0%;
+}
+
+.menu-principal-2 {
+  background: #1b1d32;
+  z-index: 99;
+  top: 50%;
+  right: 0;
+  position: fixed;
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  right: -100%;
+  transition: .3s;
+}
+
+i:hover {
+  color: black;
+}
+
+a:hover {
+  color: #00befa;
+}
+
+.burguer-button {
+  transition: 300ms ease;
+}
+
+span {
+  padding-right: 10px;
+}
+
+.menu-1-s9 {
+  padding-top: 7%;
+  width: 100%;
+}
+.menu-2-s9{
+  width: 100%;
+
+}
+
+.menu-1-s9 .col-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  color: white;
+  line-height: 3;
+  font-family: biko;
+  list-style: none;
+}
+
+.col-7{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/assets/imgs/seccion-3.png);
+  background-position: center;
+background-size: cover;}
+
+
+.col-7 h3{
+color: white;
+font-size: 4.2em;
+
+}
+
+.col-5{
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
+
+}
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-family: biko-regular;
+  border-radius: 25rem;
+}
+.newsletter input{
+    border-radius: .5em;
+    width: 350px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+
+.redes-sociales i {
+  padding-right: 20px;
+}
+.redes-sociales i:hover{
+  color: white;
+}
+
+
+@media (max-width: 576px) {
+  .nav{
     width: 100%;
-    transition-duration: .8s;
-}
-
-
-
-
-.logo{
-    max-width: 20px;
-}
-
-.burguer-menu{
-    max-width: 20px;
-}
-
-.menu{
-    margin-left: 70px;
-    color: black;
-}
-
-.menu-scroll{
-    margin-right: 70px;
-}
-
-.idioma{
-    z-index: 999;
-    position: absolute;
-    left: 900px;
     display: flex;
-}
+    justify-content: flex-end;
+  margin: 0;
+  }
 
-.idioma-scroll{
-    color: black;
-    transition-delay: .3s;
-}
+  .navbar-light .container{
+    margin: 0;
+  }
 
-.idioma a{
-    margin: 0 20px;
-}
+  .menu{
+    margin-left: 18px;
+  }
 
-a{
-    color: white;
+  .logo{
+    top: 4px;
+left: 85px;
+position: absolute;
+max-width: 230px;
+  }
+
 }
