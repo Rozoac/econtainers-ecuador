@@ -34,6 +34,12 @@ button {
       max-height: 40vw!important;
 }
 
+.tamaño_4{
+
+    max-height: 32vw!important;
+    top: 120px;
+}
+
 .boton-1-movil{
   margin: 0;
   font-size: .7em;

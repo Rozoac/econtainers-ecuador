@@ -6,8 +6,8 @@
 
 @media (min-width: 1200px) {
   .containerf {
-    padding-left: 220px;
-    padding-right: 220px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -70,4 +70,9 @@ i {}
 
 a{
   color: black;
+}
+
+
+.footer-2{
+background: #eff4f5;  
 }
