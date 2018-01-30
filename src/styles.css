@@ -1,14 +1,62 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
-h1, button {
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700,900');
+@font-face{
+  font-family: 'bebas-bold';
+  src: url('assets/fonts/bebas_neue/BebasNeueBold.otf');
+}
+@font-face{
+  font-family: 'bebas-regular';
+  src: url('assets/fonts/bebas_neue/BebasNeueRegular.otf');
+}
+@font-face{
+  font-family: 'bebas-book';
+  src: url('assets/fonts/bebas_neue/BebasNeueBook.otf');
+}
+@font-face{
+  font-family: 'bebas-light';
+  src: url('assets/fonts/bebas_neue/BebasNeueLight.otf');
 }
 
-h2, h3, h4, p, button {
-  font-family: 'Roboto', sans-serif!important;
+
+
+h1,h2, h3, h4, h5, h6 {
+  font-family: 'bebas-bold'!important;
+}
+p{
+  font-family: 'bebas-regular';
+
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* .fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.fadeIn {
+  animation-name: fadeIn;
 }
 
 .text__background {
-  font-family: biko-black;
   position: absolute;
   left: 72px;
   bottom: -55px;
@@ -18,6 +66,7 @@ h2, h3, h4, p, button {
 }
 
 /*movil*/
+
 .text__background-movil {
   position: absolute;
   left: 35px;
@@ -27,12 +76,12 @@ h2, h3, h4, p, button {
   font-weight: 700;
 }
 
-button {
-  font-family: biko-regular;
+span, input, textarea, select{
+  font-family: 'Oswald'!important;
 }
 
-a, label {
-  font-family: 'Roboto', sans-serif;
+a, label , button, li{
+  font-family: 'bebas-regular', sans-serif;
   font-weight: lighter;
 }
 
@@ -61,4 +110,21 @@ a, label {
 
 .fadeIn {
   animation-name: fadeIn;
+}
+
+.owl-dots {
+  position: absolute;
+  top: 74%;
+  left: 27.5%;
+  z-index: 3;
+}
+
+@media (max-width: 576px) {
+
+  .owl-dots {
+
+    left: 40.5%;
+
+}
+
 }

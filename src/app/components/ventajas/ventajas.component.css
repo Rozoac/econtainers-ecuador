@@ -1,5 +1,12 @@
-h3{
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700,900');
+
+p{
+  font-family: 'Oswald';
   font-size: 1.2em;
+}
+
+h3{
+  font-size: 1.3em;
 }
 
 .section-4 {

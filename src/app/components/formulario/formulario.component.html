@@ -1,19 +1,19 @@
 <!-- seccion 9 formulario -->
-
+<!--
 <div id="9" class="container-fluid-s9 section-9">
   <div class="container margin-top-50 ">
     <h2 class=" h2-s9 wow zoomIn text-white">
         CONTACTO
     </h2>
     <p class="p-s9">Si deseas recibir información acerca de nuestros productos y servicios déjanos tus datos y uno de nuestros comerciales se pondrá en contacto.</p>
-    <div class="container ">
-      <!-- formulario -->
-      <form [formGroup]="forma" (ngSubmit)="guardarCambios()">
+    <div class="container "> -->
+<!-- formulario -->
+<!-- <form [formGroup]="forma" (ngSubmit)="guardarCambios()">
         <div class="form-group" [ngClass]="{'has-danger': (!forma.get('nombre').valid)&& forma.get('nombre').touched}">
           <div class="row">
             <div class=" col-sm-12 col-lg-6">
               <input type="text" class="form-control" formControlName="nombre" required placeholder="Nombre y Apellido">
-              <div *ngIf="(forma.controls['nombre'].errors?.required)&& forma.get('nombre').touched" class="form-control-feedback">
+              <div *ngIf="(forma.controls['nombre'].errors?.required) && forma.get('nombre').touched" class="form-control-feedback">
                 El nombre es obligatorio
               </div>
             </div>
@@ -82,4 +82,101 @@
       </form>
     </div>
   </div>
+</div> -->
+
+<div id="9" class="compromiso-p">
+    <div class="row centrar">
+      <div class="col-md-6 com1 ">
+        <h3>COMPROMISO EMPRESARIAL</h3>
+        <p>Tu aliado estratégico para alquiler, compra y adecuación de contenedores marítimos de acero nuevos y usados</p>
+        <div class="container-fluid iconos">
+          <div class="row compromiso">
+            <div class="col-md-6">
+              <i class="fas fa-truck fa-3x"></i>
+              <h2>SOLUCIONES MOVILES</h2>
+            </div>
+            <div class="col-md-6">
+              <i class="fas fa-tasks fa-3x"></i>
+              <h2>CALIDAD GARANTIZADA</h2>
+            </div>
+            <div class="col-md-6">
+              <i class="fas fa-leaf fa-3x"></i>
+              <h2>ECO AMIGABLE</h2>
+            </div>
+            <div class="col-md-6">
+              <i class="fas fa-chart-line fa-3x"></i>
+              <h2>MEJORA CONTINUA</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 right">
+        <h3>CONTÁCTENOS</h3>
+        <form [formGroup]="forma" (ngSubmit)="guardarCambios()">
+          <div class="form-group" [ngClass]="{'has-danger': (!forma.get('nombre').valid)&& forma.get('nombre').touched}">
+            <div class="row">
+              <div class=" col-sm-12 col-lg-6">
+                <input type="text" class="form-control" formControlName="nombre" required placeholder="Nombre y Apellido">
+                <div *ngIf="(forma.controls['nombre'].errors?.required) && forma.get('nombre').touched" class="form-control-feedback">
+                  El nombre es obligatorio
+                </div>
+              </div>
+              <div class=" col-lg-6">
+                <select type="text" class="form-control" formControlName="ciudad">
+                <option>¿Cual es tu ciudad mas cercana?</option>
+                <option>Barranquilla</option>
+                <option>Bogotá</option>
+                <option>Bucaramanga</option>
+                <option>Cali</option>
+                <option>Cartagena</option>
+                <option>Medellin</option>
+                <option>Otros</option>
+                <option>Santa Marta</option>
+                <option>Villavicencio</option>
+              </select>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <input type="email" formControlName="cel" class="form-control" required placeholder="Celular">
+                <div *ngIf="(forma.controls['cel'].errors?.required)&& forma.get('cel').touched" class="form-control-feedback">
+                  El numero celular es obligatorio
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <select class="form-control" id="exampleSelect1" formControlName="interes">
+                <option>¿En que estas interesado?</option>
+                <option>Oficinas</option>
+                <option>Salas de Venta</option>
+                <option>Bodegas</option>
+                <option>Proyectos Especiales o Arquitectonicos</option>
+                <option>Contenedores Refrigerados</option>
+              </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class=" col-lg-6">
+                <input type="email" class="form-control" formControlName="email" placeholder="Correo Electronico">
+                <div *ngIf="(forma.controls['email'].errors?.required)&& forma.get('email').touched" class="form-control-feedback">
+                  Correo Invalido
+                </div>
+                <select class="form-control" id="exampleSelect1" formControlName="para">
+                  <option>¿Lo quieres para?</option>
+                  <option>Compra</option>
+                  <option>Alquiler</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                  <textarea class="form-control" rows="3" placeholder="Mensaje" formControlName="mensaje"></textarea>
+                  <button [disabled]="!forma.valid" type="submit" class="btn btn-primary submit-1">ENVIAR<i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
 </div>

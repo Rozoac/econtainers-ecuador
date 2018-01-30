@@ -47,6 +47,11 @@ import { PlaneacionComponent } from './components/planeacion/planeacion.componen
 import { PortafolioPageComponent } from './components/portafolio-page/portafolio-page.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { PqrsComponent } from './components/pqrs/pqrs.component';
+import { ContadorComponent } from './components/contador/contador.component';
+import { TestimoniosComponent } from './components/testimonios/testimonios.component';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
+import { CarrouselComponent } from './components/carrousel/carrousel.component';
 
 
 @NgModule({
@@ -79,12 +84,16 @@ import { PqrsComponent } from './components/pqrs/pqrs.component';
     PortafolioPageComponent,
     LandingComponent,
     PqrsComponent,
+    ContadorComponent,
+    TestimoniosComponent,
+    CarrouselComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
     ReactiveFormsModule,
     FormsModule,
+    NgxCarouselModule,
     APP_ROUTING,
     RecaptchaModule.forRoot(),
     AgmCoreModule.forRoot({

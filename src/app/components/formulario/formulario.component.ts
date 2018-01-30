@@ -22,8 +22,7 @@ export class FormularioComponent implements OnInit {
       'interes': new FormControl('¿En que estas interesado?', Validators.required),
       'email': new FormControl('', [Validators.required, Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")]),
       'para': new FormControl('¿Lo quieres para?', Validators.required),
-      'mensaje': new FormControl(),
-      'captcha': new FormControl('', Validators.required)
+      'mensaje': new FormControl()
     })
 
   }
@@ -33,7 +32,7 @@ export class FormularioComponent implements OnInit {
   resolved(captchaResponse: string) {
        console.log(`Resolved captcha with response ${captchaResponse}:`);
    }
-   
+
 
 
   guardarCambios() {

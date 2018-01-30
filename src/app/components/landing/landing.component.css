@@ -1,14 +1,11 @@
-.principal{
-  background: url("/../assets/imgs/seccion-3.png");
-  height:80vh;
+/* .container-principal{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: blue;
 }
 
-.derecha{
-  background: rgba(0, 0, 34, 0.7);
-  width: 10%;
-  height: 100%;
-}
-
-.row{
-  
-}
+footer{
+position: absolute;
+   bottom: 0;
+  } */

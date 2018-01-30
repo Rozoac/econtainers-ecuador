@@ -131,7 +131,7 @@ export class SliderPrincipalComponent implements OnInit {
 
 
 
-    // scroll
+    scroll
     $(function() {
       $('a[href="#portafolio"],a[href="#9"],a[href="#2"]').on('click', function(e) {
         e.preventDefault();

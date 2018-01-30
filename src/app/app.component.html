@@ -1,3 +1,155 @@
-<app-navbar ></app-navbar>
-<router-outlet (deactivate)="onDeactivate()"></router-outlet>
-<app-footer></app-footer>
+<a class="whatsapp-circle" href="https://api.whatsapp.com/send?phone=573116394356" target="_blank">
+  <ul class="redes social-icons icon-circle icon-rotate list-unstyled list-inline">
+    <li> <i class=" facebook fab fa-whatsapp fa-4x"></i>
+    </li>
+
+  </ul>
+</a>
+
+<div class="overflow-control">
+  <div class="main-container">
+    <div class="lateral-menu">
+      <div class="titulo-menu">
+
+      </div>
+
+      <div class="opciones">
+        <div class="titulo-menu">
+          <span>MENÚ</span>
+          <hr>
+          <ul class="redes social-icons icon-circle icon-rotate list-unstyled list-inline">
+            <li> <i class="facebook fab fa-facebook-f fa-lg" aria-hidden="true"></i>
+              <li> <i class="facebook fab fa-twitter fa-lg" aria-hidden="true"></i>
+              </li>
+              <li> <i class="facebook fab fa-youtube fa-lg" aria-hidden="true"></i>
+              </li>
+              <li> <i class="facebook fab fa-instagram fa-lg" aria-hidden="true"></i>
+              </li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <a class="cerrar" [routerLink]="['quienes-somos']">
+              <div class="nosotros">
+                <div class="menu-li menu-nosotros" (mouseenter)='overdiv("nosotros")' (mouseleave)='leavediv("nosotros")'>
+                </div>
+                <h3 (mouseenter)='overh3("nosotros")' (mouseleave)='leaveh3("nosotros")'>
+                  NOSOTROS
+                </h3>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="cerrar" [routerLink]="['trabaja']">
+              <div class="trabaja">
+                <div class="menu-li menu-trabaja" (mouseenter)='overdiv("trabaja")' (mouseleave)='leavediv("trabaja")'>
+                </div>
+                <h3 (mouseenter)='overh3("trabaja")' (mouseleave)='leaveh3("trabaja")'>
+                  TRABAJA CON NOSOTROS
+                </h3>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="cerrar" [routerLink]="['compromiso-empresarial']">
+              <div class="compromiso">
+                <div class="menu-li menu-compromiso" (mouseenter)='overdiv("compromiso")' (mouseleave)='leavediv("compromiso")'>
+                </div>
+                <h3 (mouseenter)='overh3("compromiso")' (mouseleave)='leaveh3("compromiso")'>
+                  COMPROMISO EMPRESARIAL
+                </h3>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="cerrar" href="https://blog.econtainerscolombia.com">
+              <div class="blog">
+                <div class="menu-li menu-blog" (mouseenter)='overdiv("blog")' (mouseleave)='leavediv("blog")'>
+                </div>
+                <h3 (mouseenter)='overh3("blog")' (mouseleave)='leaveh3("blog")'>
+                  BLOG
+                </h3>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="cerrar" [routerLink]="['pqrs']">
+              <div class="pqrs">
+                <div class="menu-li menu-pqrs" (mouseenter)='overdiv("pqrs")' (mouseleave)='leavediv("pqrs")'>
+                </div>
+                <h3 (mouseenter)='overh3("pqrs")' (mouseleave)='leaveh3("pqrs")'>
+                  PQRS
+                </h3>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="content">
+      <nav class="nav navbar-light bg-faded sombra ">
+        <div class="container nav-principal">
+
+          <div class="izquierda">
+            <div id="nav-icon3" class="toggle-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <a class="hidden-sm-down" href="https://api.whatsapp.com/send?phone=573116394356" target="_blank">
+              <ul class="redes social-icons icon-circle icon-rotate list-unstyled list-inline">
+                <li> <i class=" facebook fab fa-whatsapp fa-4x"></i>
+                </li>
+
+              </ul>
+            </a>
+            <div class="dropdown hidden-sm-down ">
+              <button class=" pbx idioma-b btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PBX:
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">BOGOTÁ: (6) 7462065</a>
+                <a class="dropdown-item" href="#">MEDELLÍN: (4) 6049441</a>
+                <a class="dropdown-item" href="#">MANIZALES: (6) 8918650</a>
+                <a class="dropdown-item" href="#">CALI: (2) 4850401</a>
+                <a class="dropdown-item" href="#">CARTAGENA: (5) 6939833</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="centro">
+            <a class="logo" [routerLink]="['/home']">
+                  <img class="logo" src="assets/imgs/logo.png" alt="">
+              </a>
+          </div>
+
+          <div class="derecha hidden-sm-down">
+            <div class="dropdown ">
+              <button class="idioma-b btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Idioma
+                    </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Español <img class="bandera" src="assets/imgs/colombia.png" alt=""></a>
+                <a class="dropdown-item" href="#">English <img class="bandera2" src="assets/imgs/united-states.png" alt=""></a>
+              </div>
+            </div>
+            <a href="#2" class="portafolio-a btn btn-secondary " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portafolio
+                 </a>
+            <a href="#9" class="idioma-a btn btn-secondary " id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contacto
+                 </a>
+          </div>
+
+
+
+        </div>
+      </nav>
+      <router-outlet (deactivate)="onDeactivate()"></router-outlet>
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

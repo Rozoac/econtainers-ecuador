@@ -12,7 +12,6 @@
 }
 
 footer span {
-  font-size: .7em;
 }
 
 .padding-40 {
@@ -34,6 +33,26 @@ i {}
 
 }
 
+.facebook{
+  color: #4266b2;
+}
+
+.instagram{
+  color: #d1284f;
+}
+
+.twitter{
+  color: #2daae2;
+}
+
+.linkedin{
+color: #1677b5;
+}
+
+.youtube{
+  color: #fa1100;
+}
+
 .sgs{
   display: flex;
   justify-content: center;
@@ -45,14 +64,14 @@ i {}
 }
 
 .super img {
-  height: 55px;
+  height: 42px;
   margin-right: 55px;
+  margin-top: 6px;
 }
 
 .super2{
-  height: 35px!important;
-  margin-top: 12px;
-}
+  height: 31px!important;
+    margin-top: 12px!important;}
 
 .container-fluid{
   background: #e6e6e6;
@@ -74,5 +93,5 @@ a{
 
 
 .footer-2{
-background: #eff4f5;  
+background: #eff4f5;
 }

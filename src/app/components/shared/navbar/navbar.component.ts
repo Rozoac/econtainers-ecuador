@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
 
-
+// Burguer menu
   menu() {
     let menu1 = document.getElementById('menu-1');
     let menu2 = document.getElementById('menu-2');
@@ -68,63 +68,60 @@ export class NavbarComponent implements OnInit {
 
     ngOnInit() {
 
-
-      let burguerButton = document.getElementById('burguerButton');
-      let burguerbtn = document.getElementById('burguer-btn');
-      let $menu1 = document.getElementById('menu-1');
-      let $menu2 = document.getElementById('menu-2');
-      let $nav = document.querySelector(".nav");
-      let idiomaA = document.querySelector(".idioma-a");
-      let idiomaB = document.querySelector(".idioma-b");
-      let lupa = document.querySelector(".lupa");
-
-
-
-      (function() {
-        let pinged = false;
-        let nav = document.querySelector(".nav");
+      //
+      // let burguerButton = document.getElementById('burguerButton');
+      // let burguerbtn = document.getElementById('burguer-btn');
+      // let $menu1 = document.getElementById('menu-1');
+      // let $menu2 = document.getElementById('menu-2');
+      // let $nav = document.querySelector(".nav");
+      // let idiomaA = document.querySelector(".idioma-a");
+      // let idiomaB = document.querySelector(".idioma-b");
+      //
+      //
+      //
+      // (function() {
+      //   let pinged = false;
+      //   let nav = document.querySelector(".nav");
         // let stickyScrollPoint = document..clientHeight;
-        let idiomaA = document.querySelector(".idioma-a");
-        let idiomaB = document.querySelector(".idioma-b");
-        let menu = document.querySelector(".menu");
-        let lupa = document.querySelector(".lupa");
-        let portafolio = document.querySelector(".portafolio-a");
+        // let idiomaA = document.querySelector(".idioma-a");
+        // let idiomaB = document.querySelector(".idioma-b");
+        // let menu = document.querySelector(".menu");
+        // let portafolio = document.querySelector(".portafolio-a");
 
         // let lupa = (<HTMLImageElement>document.querySelector(".lupa"));
 
-        function pingToTop() {
-          if (pinged) return;
-          nav.classList.add("pined");
-          portafolio.classList.add("idioma-scroll")
-          idiomaA.classList.add("idioma-scroll");
-          idiomaB.classList.add("idioma-scroll");
-          lupa.classList.add("negro");
+        // function pingToTop() {
+        //   if (pinged) return;
+        //   nav.classList.add("pined");
+        //   portafolio.classList.add("idioma-scroll")
+        //   idiomaA.classList.add("idioma-scroll");
+        //   idiomaB.classList.add("idioma-scroll");
+
           // lupa.src = "assets/imgs/lupa-negra.png";
-          pinged = true;
-        }
+        //   pinged = true;
+        // }
+        //
+        //
+        // function unPingFromTop() {
+          // if (!pinged) return;
+          // nav.classList.remove("pined");
+          // portafolio.classList.remove("idioma-scroll")
 
-
-        function unPingFromTop() {
-          if (!pinged) return;
-          nav.classList.remove("pined");
-          portafolio.classList.remove("idioma-scroll")
-
-          idiomaA.classList.remove("idioma-scroll");
-          idiomaB.classList.remove("idioma-scroll");
+          // idiomaA.classList.remove("idioma-scroll");
+          // idiomaB.classList.remove("idioma-scroll");
           // lupa.src = "assets/imgs/lupa.png";
-          lupa.classList.remove("negro");
-          pinged = false;
-        }
-        window.addEventListener('scroll', function(ev) {
+          // pinged = false;
+        // }
+        // window.addEventListener('scroll', function(ev) {
           // if(window.scrollY < stickyScrollPoint) return unPingFromTop();
-          let coords = nav.getBoundingClientRect();
-          if (coords.top <= 0) return pingToTop();
-          unPingFromTop();
-
-        })
-
-      })();
-
-    }
-
+  //         let coords = nav.getBoundingClientRect();
+  //         if (coords.top <= 0) return pingToTop();
+  //         unPingFromTop();
+  //
+  //       })
+  // 
+  //     })();
+  //
+     }
+  //
   }

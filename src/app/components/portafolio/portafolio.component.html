@@ -1,17 +1,15 @@
 <!-- portafolio -->
 
 
-<div id="portafolio" class="container section-4 hidden-sm-down">
+<!-- <div id="portafolio" class="container section-4 hidden-sm-down">
   <div class="container">
     <div class="row">
 
       <div class="portafolio-texto push-3 col-3">
         <h3>Portafolio</h3>
       </div>
-      <div class="push-3 col-6">
-        <img class="logoe-2" src="assets/imgs/logo-2.png" alt="">
-      </div>
-      
+
+
 
     </div>
   </div>
@@ -33,9 +31,37 @@
       </div>
       <div class="card-columns col-9">
         <div (click)="verContenedor(i)" class="colorear card" *ngFor="let contenedor of contenedores; let i = index">
-          <img *ngIf="contenedor.tipo== tipo || tipo == null " class="card-img-top img-fluid wow zoomIn" src="{{contenedor.img}}" alt="Card image cap">
+          <img *ngIf="contenedor.tipo == tipo || tipo == null " class="card-img-top img-fluid wow zoomIn" src="{{contenedor.img}}" alt="Card image cap">
         </div>
       </div>
     </div>
   </div>
+</div> -->
+
+<div id="2" class="carrousel">
+  <ul>
+    <li (click)="tipo = null">Todos</li>
+    <li (click)="tipo = 'sala de venta'">Salas de ventas</li>
+    <li (click)="tipo = 'oficina'">Oficinas</li>
+    <li (click)="tipo = 'refrigerado'">Refrigerado</li>
+    <li (click)="tipo = 'bodega'">Bodegas</li>
+    <li (click)="tipo = 'arquitectonico'">Proy. Arquitectónicos</li>
+  </ul>
+</div>
+
+<div class="container-2">
+
+  <ngx-carousel [inputs]="carouselOne" >
+
+    <ngx-tile NgxCarouselItem  *ngFor="let contenedor of contenedores; let i = index" [ngStyle]= "{display: (contenedor.tipo == tipo || tipo == null) ? 'inline-block' : 'none' }">
+      <div class="wBg"  >
+        <div  (click)="verContenedor(i)" class="tile" [style.background]="'url(' + contenedor.img + ')'">
+
+        </div>
+        <h4>{{contenedor.nombre}}</h4>
+      </div>
+    </ngx-tile>
+    <button NgxCarouselPrev class='leftRs'>&lt;</button>
+    <button NgxCarouselNext class='rightRs'>&gt;</button>
+  </ngx-carousel>
 </div>

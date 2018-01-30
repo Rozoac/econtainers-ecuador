@@ -166,7 +166,7 @@ button {
 .flex__container {
   position: absolute;
   top: 0;
-  left: 0;
+  /* left: 0; */
   display: flex;
   display: -webkit-flex;
   display: -moz-flex;
@@ -221,7 +221,7 @@ button {
 }
 
 .text--big {
-  font-size: 3.em;
+  font-size: 3.5rem;
 }
 /*movil*/
 .text--big_movil {
@@ -262,7 +262,7 @@ right: -30px;
 .flex__item {
   height: 100vh;
   color: #fff;
-  transition: transform 0.1s linear;
+  transition: transform 2s linear;
 }
 
 .flex__item--left {
@@ -276,7 +276,7 @@ right: -30px;
   -ms-align-items: center;
   width: 55%;
   transform-origin: left bottom;
-  transition: transform 0.1s linear 0.4s;
+  transition: transform .4s linear 0.4s;
   opacity: 0;
   position: relative;
   overflow: hidden;
@@ -285,7 +285,7 @@ right: -30px;
 .flex__item--right {
   width: 45%;
   transform-origin: right center;
-  transition: transform 0.1s linear 0s;
+  transition: transform 0.3s linear 0s;
   opacity: 0;
 }
 
@@ -459,13 +459,14 @@ background: #b5d9e4
 }
 
 .pokemon__img {
+  width: 50%;
   position: absolute;
   bottom: 20px;
   right: 5%;
   max-height: 47vw;
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+  transition: opacity 1s 0.6s, transform 2s .30s cubic-bezier(0, 0.88, 0.4, 0.93);
 }
 
 
@@ -634,16 +635,33 @@ section::after {
 }
 
 .text__background {
-    font-family: biko-black;
     position: absolute;
     left: 52px;
-    bottom: -45px;
+    bottom: -30px;
     color: #00cdfb;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 700;
 }
 
 
 .super{
   height: px;
+}
+
+@media (min-width: 1600px) {
+  .text--big {
+      font-size: 5.5rem;
+  }
+
+  .text--normal {
+    font-size: 4.2em;
+}
+
+a{
+  font-size: 2em;
+}
+.text--normal {
+    font-size: 4.2em;
+}
+
 }

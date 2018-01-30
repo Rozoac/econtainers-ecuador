@@ -6,17 +6,33 @@
 /*seccion 7 */
 
 .circulo {
-  border-radius: 28%;
-  -moz-border-radius: 28%;
-  -webkit-border-radius: 28%;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   background-color: white;
   text-align: center;
-  width: 120px;
-  height: 120px;
-  margin: 0;
+  max-width: 50%;
+  margin: 0 auto;
+  color: #1678e1;
 }
 
-.circulo p {}
+  #circulo {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+  background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+}
+
+svg{
+  color: #1576dd;
+}
 
 .logo-s7 {
   padding: 30px;
