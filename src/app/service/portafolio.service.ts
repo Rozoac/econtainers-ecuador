@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class PortafolioService {
 
-  private contenedores: Contenedor[] =
+  private contenedores:any =
   [
     {
       nombre: "Renault",

@@ -1,5 +1,9 @@
 /*colores*/
 
+button{
+cursor: pointer;
+}
+
 .text-gris {
   color: #6c747a;
 }
@@ -34,11 +38,6 @@ button {
       max-height: 40vw!important;
 }
 
-.tamaño_4{
-
-    max-height: 32vw!important;
-    top: 120px;
-}
 
 .boton-1-movil{
   margin: 0;
@@ -647,6 +646,44 @@ section::after {
 .super{
   height: px;
 }
+
+
+@media screen and (max-width: 768px) and (min-width:577px){
+
+
+  .flex__item {
+    height: 60vh;
+
+ }
+
+ .text__background{
+
+    font-size: 70px;
+}
+
+.text--big {
+    font-size: 3rem;
+}
+
+.text--normal {
+    font-size: 2.5em;
+}
+
+.button-comprar, button {
+    padding: 10px 10px;
+}
+}
+
+@media screen and (max-width: 992px)  and (min-width:769px){
+
+
+ }
+
+ @media (min-width: 1200px) {
+
+}
+
+
 
 @media (min-width: 1600px) {
   .text--big {

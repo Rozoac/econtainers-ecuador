@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ContenedoresService {
-  private contenedores: Contenedor[] =
+  private contenedores:any =
   [
     {
       nombre: "Renault",
@@ -25,7 +25,7 @@ export class ContenedoresService {
       img_0: "assets/imgs/contenedores/biblioteca-0.jpg",
       img: "assets/imgs/contenedores/biblioteca-1.jpg",
       img_1: "assets/imgs/contenedores/biblioteca-2.jpg",
-      img_2: "assets/imgs/2.jpg",
+      img_2: "assets/imgs/contenedores/planos/biblioteca.jpg",
       img_3: "assets/imgs/contenedores/biblioteca-3.jpg",
       img_4: "assets/imgs/contenedores/biblioteca-4.jpg",
       tipo: "arquitectonico"
@@ -101,7 +101,7 @@ export class ContenedoresService {
       img_0: "assets/imgs/contenedores/acqua-0.jpg",
       img: "assets/imgs/contenedores/acqua-1.jpg",
       img_1: "assets/imgs/contenedores/acqua-2.jpg",
-      img_2: "assets/imgs/2.jpg",
+      img_2: "assets/imgs/contenedores/planos/acqua.jpg",
       img_3: "assets/imgs/contenedores/acqua-3.jpg",
       img_4: "assets/imgs/contenedores/acqua-4.jpg",
       tipo: "sala de venta"
@@ -120,6 +120,32 @@ export class ContenedoresService {
       img_4: "assets/imgs/contenedores/refrigerado-4.jpg",
       vinculo: "Más Información",
       tipo: "refrigerado"
+
+    },
+    {
+      nombre: "Mall Turístico (Ilarco)",
+      bio_1: "Proyecto arquitectónico",
+      bio_2: "Ubicado en el km 13 vía al aeropuerto, en Pozos Colorados, Santa Marta. Un complejo de restaurantes, Zona C, hecho en 5 contenedores de 40 y 4 de 20 pies. Una idea auténtica e innovadora llena de coloridos ambientes que inspiran dinamismo y alegría, reflejando así los aires de la Costa Pacifica colombiana.",
+      img_0: "assets/imgs/contenedores/santamarta-1.jpg",
+      img: "assets/imgs/contenedores/santamarta-1.jpg",
+      img_1: "assets/imgs/contenedores/santamarta-2.jpg",
+      img_2: "assets/imgs/contenedores/planos/ilarco.jpg",
+      img_3: "assets/imgs/contenedores/santamarta-4.jpg",
+      img_4: "assets/imgs/contenedores/santamarta-5.jpg",
+      tipo: "arquitectonico"
+
+    },
+    {
+      nombre: "Pontificia Universidad Javeriana",
+      bio_1: "Proyecto arquitectónico",
+      bio_2: "La adecuación y el diseño de interiores hace parte de nuestros valores agregados en nuestros productos y servicios, un ambiente propicio según la función y la necesidad de cada uno de nuestros clientes a partir de arquitectura sustentable y renovable este complejo esta Ubicado en La Pontificia Universidad Javeriana - Bogota.",
+      img_0: "assets/imgs/contenedores/bogota-1.jpg",
+      img: "assets/imgs/contenedores/bogota-1.jpg",
+      img_1: "assets/imgs/contenedores/bogota-2.jpg",
+      img_2: "assets/imgs/contenedores/planos/javeriana.jpg",
+      img_3: "assets/imgs/contenedores/bogota-0.jpg",
+      img_4: "assets/imgs/contenedores/bogota-5.jpg",
+      tipo: "arquitectonico"
 
     }
   ];

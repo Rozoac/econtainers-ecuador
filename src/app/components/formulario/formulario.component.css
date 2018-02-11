@@ -201,6 +201,13 @@ button svg {
   .com1 {
     margin: 0 35px;
   }
+
+  .right{
+    margin-bottom: 0;
+}
+select{
+      margin-bottom: 15px;
+}
 }
 
 @media (min-width: 768px) {

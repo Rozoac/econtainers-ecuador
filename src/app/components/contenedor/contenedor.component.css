@@ -57,18 +57,26 @@ a{
   /*Sepia*/
 }
 
-.imagenes-portafolio .col-4{
+.imagenes-portafolio .col-md-4{
+  margin-bottom: 30px;
   z-index: 2;
 }
 
+.imagenes-portafolio .col-md-4 img{
+  width: 100%;
+
+      height: 310px;
+    }
+
 .cuadro-azul{
   z-index: 1;
-  position: relative;
-  bottom: 130px;
-  left: 28%;
+  position: absolute;
+  bottom: -11px;
+  right: -270px;
   height: 180px;
-  width: 72%;
+  width: 100%;
   background: #00a8ff;
+
 }
 .cuadro-azul2{
   z-index: 1;
@@ -96,7 +104,8 @@ a{
 }
 
 .info2{
-  padding-bottom: 100px;
+      margin-top: 40px;
+  padding-bottom: 120px;
 }
 
 .info2 p{
@@ -150,3 +159,54 @@ i {}
 .texto-2{
   font-weight: 100!important;
 }
+
+@media screen and (max-width: 576px)  {
+
+  #nav-icon3 span:nth-child(1) {
+    top: 6px;
+}
+
+#nav-icon3 span:nth-child(4) {
+    top: 30px;
+}
+
+  .logo {
+    width: 230px!important;
+}
+  .cuadro-azul {
+    right: -184px;
+    height: 994px;
+}
+
+.cuadro-azul2 {
+  bottom: 250px;
+height: 270px;
+}
+
+.imagen-portafolio-b .container p {
+  font-weight: lighter;
+  position: absolute;
+  top: 32px;
+}
+
+
+}
+
+
+@media screen and (max-width: 768px) and (min-width:577px){
+
+ }
+
+@media screen and (max-width: 992px)  and (min-width:769px){
+
+
+ }
+
+ @media (min-width: 1200px) {
+
+}
+
+
+ @media (min-width: 1600px) {
+
+	}

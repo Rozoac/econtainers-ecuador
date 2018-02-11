@@ -1,88 +1,4 @@
-<!-- seccion 9 formulario -->
-<!--
-<div id="9" class="container-fluid-s9 section-9">
-  <div class="container margin-top-50 ">
-    <h2 class=" h2-s9 wow zoomIn text-white">
-        CONTACTO
-    </h2>
-    <p class="p-s9">Si deseas recibir información acerca de nuestros productos y servicios déjanos tus datos y uno de nuestros comerciales se pondrá en contacto.</p>
-    <div class="container "> -->
-<!-- formulario -->
-<!-- <form [formGroup]="forma" (ngSubmit)="guardarCambios()">
-        <div class="form-group" [ngClass]="{'has-danger': (!forma.get('nombre').valid)&& forma.get('nombre').touched}">
-          <div class="row">
-            <div class=" col-sm-12 col-lg-6">
-              <input type="text" class="form-control" formControlName="nombre" required placeholder="Nombre y Apellido">
-              <div *ngIf="(forma.controls['nombre'].errors?.required) && forma.get('nombre').touched" class="form-control-feedback">
-                El nombre es obligatorio
-              </div>
-            </div>
-            <div class=" col-lg-6">
-              <select type="text" class="form-control" formControlName="ciudad">
-        <option>¿Cual es tu ciudad mas cercana?</option>
-        <option>Barranquilla</option>
-        <option>Bogotá</option>
-        <option>Bucaramanga</option>
-        <option>Cali</option>
-        <option>Cartagena</option>
-        <option>Medellin</option>
-        <option>Otros</option>
-        <option>Santa Marta</option>
-        <option>Villavicencio</option>
-      </select>
 
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 col-lg-6">
-              <input type="email" formControlName="cel" class="form-control" required placeholder="Celular">
-              <div *ngIf="(forma.controls['cel'].errors?.required)&& forma.get('cel').touched" class="form-control-feedback">
-                El numero celular es obligatorio
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <select class="form-control" id="exampleSelect1" formControlName="interes">
-        <option>¿En que estas interesado?</option>
-        <option>Oficinas</option>
-        <option>Salas de Venta</option>
-        <option>Bodegas</option>
-        <option>Proyectos Especiales o Arquitectonicos</option>
-        <option>Contenedores Refrigerados</option>
-      </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class=" col-lg-6">
-              <input type="email" class="form-control" formControlName="email" placeholder="Correo Electronico">
-              <div *ngIf="(forma.controls['email'].errors?.required)&& forma.get('email').touched" class="form-control-feedback">
-                Correo Invalido
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <select class="form-control" id="exampleSelect1" formControlName="para">
-        <option>¿Lo quieres para?</option>
-        <option>Compra</option>
-        <option>Alquiler</option>
-      </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <textarea class="form-control" rows="3" placeholder="Mensaje" formControlName="mensaje"></textarea>
-            </div>
-            <div class="col-lg-6">
-              <recaptcha (resolved)="resolved($event)" siteKey="6LcPlDAUAAAAAI-vj-03COOVRGUf41eTda6QaJ8z" formControlName="captcha"></recaptcha>
-            </div>
-          </div>
-          <div class="submit-s9">
-            <button [disabled]="!forma.valid" type="submit" class="btn btn-primary submit-1">ENVIAR</button>
-          </div>
-
-        </div>
-      </form>
-    </div>
-  </div>
-</div> -->
 
 <div id="9" class="compromiso-p">
     <div class="row centrar">
@@ -114,17 +30,17 @@
 
       <div class="col-md-6 right">
         <h3>CONTÁCTENOS</h3>
-        <form [formGroup]="forma" (ngSubmit)="guardarCambios()">
+        <form  [formGroup]="forma" (submit)="sendEmail(message)">
           <div class="form-group" [ngClass]="{'has-danger': (!forma.get('nombre').valid)&& forma.get('nombre').touched}">
             <div class="row">
               <div class=" col-sm-12 col-lg-6">
-                <input type="text" class="form-control" formControlName="nombre" required placeholder="Nombre y Apellido">
-                <div *ngIf="(forma.controls['nombre'].errors?.required) && forma.get('nombre').touched" class="form-control-feedback">
+                <input type="text" class="form-control" name="name" formControlName="nombre" required placeholder="Nombre y Apellido" [(ngModel)]="message.name">
+                <div *ngIf="(forma.controls['nombre'].errors?.required)&& forma.get('nombre').touched" class="form-control-feedback">
                   El nombre es obligatorio
                 </div>
               </div>
               <div class=" col-lg-6">
-                <select type="text" class="form-control" formControlName="ciudad">
+                <select type="text" name="ciudad" formControlName="ciudad" class="form-control" [(ngModel)]="message.ciudad">
                 <option>¿Cual es tu ciudad mas cercana?</option>
                 <option>Barranquilla</option>
                 <option>Bogotá</option>
@@ -141,16 +57,16 @@
             </div>
             <div class="row">
               <div class="col-sm-12 col-lg-6">
-                <input type="email" formControlName="cel" class="form-control" required placeholder="Celular">
+                <input type="text" name="celular" formControlName="cel" class="form-control" required placeholder="Celular" [(ngModel)]="message.celular">
                 <div *ngIf="(forma.controls['cel'].errors?.required)&& forma.get('cel').touched" class="form-control-feedback">
-                  El numero celular es obligatorio
-                </div>
+                El numero celular es obligatorio
+              </div>
               </div>
               <div class="col-lg-6">
-                <select class="form-control" id="exampleSelect1" formControlName="interes">
+                <select class="form-control" name="tipo" formControlName="interes" [(ngModel)]="message.tipo">
                 <option>¿En que estas interesado?</option>
                 <option>Oficinas</option>
-                <option>Salas de Venta</option>
+                <option>Salas de Ventas</option>
                 <option>Bodegas</option>
                 <option>Proyectos Especiales o Arquitectonicos</option>
                 <option>Contenedores Refrigerados</option>
@@ -159,22 +75,20 @@
             </div>
             <div class="row">
               <div class=" col-lg-6">
-                <input type="email" class="form-control" formControlName="email" placeholder="Correo Electronico">
-                <div *ngIf="(forma.controls['email'].errors?.required)&& forma.get('email').touched" class="form-control-feedback">
-                  Correo Invalido
+                <input type="email" class="form-control" name="email" formControlName="email" placeholder="Correo Electronico" [(ngModel)]="message.email">
+                <div class="form-control-feedback">
                 </div>
-                <select class="form-control" id="exampleSelect1" formControlName="para">
+                <select class="form-control" name="para" formControlName="para" [(ngModel)]="message.para">
                   <option>¿Lo quieres para?</option>
                   <option>Compra</option>
                   <option>Alquiler</option>
                 </select>
               </div>
               <div class="col-lg-6">
-                  <textarea class="form-control" rows="3" placeholder="Mensaje" formControlName="mensaje"></textarea>
-                  <button [disabled]="!forma.valid" type="submit" class="btn btn-primary submit-1">ENVIAR<i class="fas fa-arrow-right"></i></button>
+                  <textarea class="form-control" rows="3" placeholder="Mensaje" name="message" formControlName="mensaje" [(ngModel)]="message.message"></textarea>
+                  <button [disabled]="!forma.valid"  type="submit" class="btn btn-primary submit-1">ENVIAR<i class="fas fa-arrow-right"></i></button>
               </div>
             </div>
-
           </div>
         </form>
       </div>

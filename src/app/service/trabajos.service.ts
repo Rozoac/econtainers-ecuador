@@ -43,8 +43,22 @@ export class TrabajosService {
       casa: "DC"
     },
     {
-      nombre: "Estrategias Comerciales",
-      bio: "Si eres profesional en diseño, comunicación, mercadeo, publicidad o arquitectura, estamos esperando tu talento para unirte al departamento creativo de la compañía.",
+      nombre: "Marketing",
+      bio: "Si eres profesional en diseño, comunicación, mercadeo, publicidad, estamos esperando tu talento para unirte al departamento creativo de la compañía.",
+      img: "assets/imgs/contenedores/6.jpg",
+      aparicion: "1962-08-01",
+      casa: "Marvel"
+    },
+    {
+      nombre: "Técnico de refrigeración",
+      bio: "Buscamos técnicos expertos en refrigeración industrial, con conocimiento en contenedores refrigerados y aires acondicionados. Debe tener disposición para viajar a nivel nacional.",
+      img: "assets/imgs/contenedores/6.jpg",
+      aparicion: "1962-08-01",
+      casa: "Marvel"
+    },
+    {
+      nombre: "Arquitectura",
+      bio: "Si eres experto en arquitectura, y sabes manejar programas como : Lumión, Sketchup y autocad envianos tu hoja de vida.",
       img: "assets/imgs/contenedores/6.jpg",
       aparicion: "1962-08-01",
       casa: "Marvel"

@@ -4,10 +4,10 @@
   <span>Diligenciamiento de peticiones, quejas y reclamos</span>
   <hr>
 
-  <form>
+  <form [formGroup]="forma" (submit)="sendEmail(message)">
     <div class="form-group">
       <label for="exampleSelect1">Asunto</label>
-      <select class="form-control" id="exampleSelect1">
+      <select name="asunto" formControlName="asunto" required class="form-control" id="exampleSelect1" [(ngModel)]="message.asunto">
         <option>Seleccione</option>
         <option>Petición</option>
         <option>Queja</option>
@@ -18,16 +18,16 @@
     </div>
     <div class="form-group">
       <label for="exampleInputPassword1">Nombre</label>
-      <input type="text" class="form-control" id="exampleInputPassword1">
+      <input name="nombre" formControlName="nombre" type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="message.nombre">
     </div>
     <div class="form-group">
       <label for="exampleInputPassword1">Telefono Contacto</label>
-      <input type="text" class="form-control" id="exampleInputPassword1">
+      <input name="telefono" formControlName="telefono" type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="message.telefono">
     </div>
 
     <div class="form-group">
       <label for="exampleSelect1">Tipo de Identificación</label>
-      <select class="form-control" id="exampleSelect1">
+      <select name="tipo" formControlName="tipo" class="form-control" id="exampleSelect1" [(ngModel)]="message.tipo">
         <option>Seleccione</option>
         <option>Cédula</option>
         <option>Nit/Rut</option>
@@ -38,27 +38,27 @@
 
     <div class="form-group">
       <label for="exampleInputPassword1">Identificación</label>
-      <input type="text" class="form-control" id="exampleInputPassword1">
+      <input name="id" formControlName="id" type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="message.id">
     </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Correo Electronico</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@hotmail.com">
+    <input name="correo" formControlName="correo" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@hotmail.com" [(ngModel)]="message.correo">
     <small id="emailHelp" class="form-text text-muted">Correo personal.</small>
   </div>
 
   <div class="form-group">
     <label for="exampleTextarea">Motivo</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    <textarea  name="motivo" formControlName="motivo" class="form-control" id="exampleTextarea" rows="3" [(ngModel)]="message.motivo"></textarea>
   </div>
 
 
   <div class="form-check">
     <label class="form-check-label">
-      <input type="checkbox" class="form-check-input">
+      <input type="checkbox" required class="form-check-input">
 Autorizo el uso de la información de acuerdo al Aviso de Privacidad
     </label>
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button [disabled]="!forma.valid" type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
 

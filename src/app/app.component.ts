@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 declare var jQuery: any;
 declare var $: any;
 
@@ -10,7 +11,16 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+
+
+  constructor(private translate: TranslateService){
+    translate.setDefaultLang('es');
+
+  }
+
+  switchLanguage(language: string){
+    this.translate.use(language);
+  }
 
 
   overh3(div: string) {

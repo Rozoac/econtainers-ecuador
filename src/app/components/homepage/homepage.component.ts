@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
+
 import { ContenedoresService } from '../../service/contenedores.service';
 import { Router } from '@angular/router';
 import { Contacto } from '../../models/contacto.model';
@@ -13,11 +15,15 @@ export class HomepageComponent implements OnInit {
 
 
 
-  constructor() {
+  constructor(private activatedRoute: ActivatedRoute) {
   }
 
 
   ngOnInit() {
+
+    this.activatedRoute.params.subscribe( params =>{
+      console.log(params);
+    })
 
 
 

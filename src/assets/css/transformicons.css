@@ -76,3 +76,32 @@
   width: 0%;
   left: 50%;
 }
+
+@media screen and (max-width: 576px)  {
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4{
+
+width: 35px;
+}
+
+  #nav-icon3 span:nth-child(1) {
+    top: 9px;
+}
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+
+    height: 4px;
+  }
+
+#nav-icon3 span:nth-child(4) {
+    top: 27px;
+}
+
+.nav .container {
+
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+}

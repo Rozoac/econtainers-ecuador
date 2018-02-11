@@ -3,20 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>E-containers Colombia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Venta y alquiler de contenedores | E-Containers Colombia‎</title>
+  <meta name="description" content="Somos una empresa que se especializa en venta, reparación, modificación y adquisición de contenedores marítimos de acero nuevos y usados.">
   <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/ihover.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/transformicons.css" />
-
-
-
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-
   <script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
   <script type="text/javascript" src="assets/js/modernizr.custom.79639.js"></script>
   <script type="text/javascript" src="assets/js/jquery.ba-cond.min.js"></script>
@@ -43,7 +38,7 @@
   </script>
 
   <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -53,92 +48,10 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>
+</script> -->
 
 <!--End of Tawk.to Script-->
-<script type="text/javascript">
-  $(function() {
 
-    var Page = (function() {
-
-      var $navArrows = $( '#nav-arrows' ),
-        $nav = $( '#nav-dots > span' ),
-        slitslider = $( '#slider' ).slitslider( {
-          onBeforeChange : function( slide, pos ) {
-
-            $nav.removeClass( 'nav-dot-current' );
-            $nav.eq( pos ).addClass( 'nav-dot-current' );
-
-          }
-        } ),
-
-        init = function() {
-
-          initEvents();
-
-        },
-        initEvents = function() {
-
-          // add navigation events
-          $navArrows.children( ':last' ).on( 'click', function() {
-
-            slitslider.next();
-            return false;
-
-          } );
-
-          $navArrows.children( ':first' ).on( 'click', function() {
-
-            slitslider.previous();
-            return false;
-
-          } );
-
-          $nav.each( function( i ) {
-
-            $( this ).on( 'click', function( event ) {
-
-              var $dot = $( this );
-
-              if( !slitslider.isActive() ) {
-
-                $nav.removeClass( 'nav-dot-current' );
-                $dot.addClass( 'nav-dot-current' );
-
-              }
-
-              slitslider.jump( i + 1 );
-              return false;
-
-            } );
-
-          } );
-
-        };
-
-        return { init : init };
-
-    })();
-
-    Page.init();
-
-    /**
-     * Notes:
-     *
-     * example how to add items:
-     */
-
-    /*
-
-    var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-
-    // call the plugin's add method
-    ss.add($items);
-
-    */
-
-  });
-</script>
 
 
 </head>
@@ -179,7 +92,7 @@ s0.parentNode.insertBefore(s1,s0);
   @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
     to {-webkit-transform: rotate(360deg);}}
   .loading{
-      width: 100px;
+      width: 150px;
       -webkit-animation: 3s rotate linear infinite;
       animation: 3s rotate linear infinite;
       -webkit-transform-origin: 50% 50%;

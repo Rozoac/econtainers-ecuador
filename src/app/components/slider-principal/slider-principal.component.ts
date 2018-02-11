@@ -16,10 +16,8 @@ export class SliderPrincipalComponent implements OnInit {
 
   ngOnInit() {
 
-
-    let timer = TimerObservable.create(2000, 26000);
+    let timer = TimerObservable.create(2000, 40000);
         this.subscription = timer.subscribe(t => {
-
 
               let current2 = $('.flex--active').data('slide'),
               // get button data-slide
@@ -80,7 +78,28 @@ export class SliderPrincipalComponent implements OnInit {
                   }, 800);
                 }, 16000);
               }
+              let current5 = $('.flex--active').data('slide'),
+                // get button data-slide
+                next5 = $(this).data('slide');
+
+              $('.slide-nav').removeClass('active');
+              $(this).addClass('active');
+
+              if (current5 === next5) {
+                return false;
+              } else {
+                setTimeout(function() {
+                  $('.slider__warpper').find('.flex__container[data-slide=' + 5 + ']').addClass('flex--preStart');
+                  $('.flex--active').addClass('animate--end');
+                  setTimeout(function() {
+                    $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+                    $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+                  }, 800);
+                }, 21000);
+              }
               // get current slide
+
+
               let current = $('.flex--active').data('slide'),
                 // get button data-slide
                 next = $(this).data('slide');
@@ -98,7 +117,7 @@ export class SliderPrincipalComponent implements OnInit {
                     $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
                     $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
                   }, 800);
-                }, 23000);
+                }, 28000);
               }
         });
 

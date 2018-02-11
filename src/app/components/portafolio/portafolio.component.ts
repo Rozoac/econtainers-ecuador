@@ -13,7 +13,7 @@ declare var $: any;
 export class PortafolioComponent implements OnInit {
 
   public carouselOne: NgxCarousel;
-
+public tipo: any = null;
   // portafolio
 
 contenedores: any[] = [];
