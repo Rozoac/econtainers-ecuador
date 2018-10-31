@@ -169,6 +169,12 @@ form {
   margin: 17px;
 }
 
+
+.form-check {
+    margin: .5rem 0 .5rem 1.3rem;
+    color: #2898c1;
+}
+
 input, select, textarea, option {
   border-radius: 0;
 }

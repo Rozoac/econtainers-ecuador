@@ -45,6 +45,7 @@ message: IMessage = {
       'interes': new FormControl('¿En que estas interesado?', Validators.required),
       'email': new FormControl('', [Validators.required, Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")]),
       'para': new FormControl('¿Lo quieres para?', Validators.required),
+      'autorizo': new FormControl('', Validators.required),
       'mensaje': new FormControl()
     })
 

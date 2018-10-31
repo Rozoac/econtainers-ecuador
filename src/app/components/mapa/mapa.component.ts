@@ -10,17 +10,16 @@ declare var $: any;
 export class MapaComponent implements OnInit {
 
   title: string = 'My first AGM project';
-  latCali: number = 3.4382475;
-  lngCali: number = -76.5304554;
-  latCartagena: number = 10.3522594;
-  lngCartagena: number = -75.4923761;
-  latBogota: number = 4.694814;
-  lngBogota: number = -74.063321;
-  latManizales: number = 5.068235;
-  lngManizales: number = -75.518285;
-  latMedellin: number = 6.206960;
-  lngMedellin: number = -75.564878;
-  zoom: number = 6;
+
+  latMapa: number = -2.892183;
+  lngMapa: number = -79.0243997;
+  latQuito: number = -0.2017126;
+  lngQuito: number = -78.4847716;
+  latQuito2: number = -0.1977709;
+  lngQuito2: number = -78.4813194;
+  latGuayaquil: number = -2.0884538;
+  lngGuayaquil: number = -79.944177;
+  zoom: number = 7;
   // zoomControl = false;
   zoomControlOptions: ZoomControlOptions = {
   position: 1
@@ -29,7 +28,7 @@ export class MapaComponent implements OnInit {
 
   // iconUrl: string = "/assets/imgs/marcador.png";
   scrollwheel: boolean = true;
-  isOpen: boolean = true;
+  isOpen: boolean = false;
 
 
 

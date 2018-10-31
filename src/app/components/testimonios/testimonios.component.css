@@ -41,19 +41,19 @@
 }
 
 .testimonio-1 {
-  background: url("/assets/imgs/testimonio1.jpg");
+  background: url("/assets/imgs/testimonio.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .testimonio-2 {
-  background: url("/assets/imgs/testimonio2.jpg");
+  background: url("/assets/imgs/testimonio2.png");
   background-position: center;
   background-size: cover;
 }
 
 .testimonio-3 {
-  background: url("/assets/imgs/testimonio3.jpg");
+  background: url("/assets/imgs/testimonio3.png");
   background-position: center;
   background-size: cover;
 }

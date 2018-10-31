@@ -7,8 +7,8 @@ export class ContenedoresService {
     {
       nombre: "Renault",
       bio_1: "Sala de ventas",
-      bio_2: "En Manizales, Caldas, se realizó una sala de ventas para la marca francés de automóviles Renault, hecha de un contenedor de 20 pies que cuenta con los colores corporativos para conservar la identidad de la marca. Los laterales son en vidrio, ideales para aumentar la magnitud visual del proyecto, con el fin de llamar la atención de sus potenciales clientes. Adicionalmente, puede ser trasladada de un lugar a otro para asegurar su operación en diferentes lugares de Colombia.",
-      bio_3: "E-Containers Colombia brinda a sus usuarios los mejores productos del sector y en el tiempo oportuno para poner en marcha el desarrollo de cada uno de sus proyectos, por eso las salas de ventas son fabricadas bajo los más altos estándares de calidad y con los mejores acabados.",
+      bio_2: "Se realizó una sala de ventas para la marca francés de automóviles Renault, hecha de un contenedor de 20 pies que cuenta con los colores corporativos para conservar la identidad de la marca. Los laterales son en vidrio, ideales para aumentar la magnitud visual del proyecto, con el fin de llamar la atención de sus potenciales clientes. Adicionalmente, puede ser trasladada de un lugar a otro para asegurar su operación en diferentes lugares del país.",
+      bio_3: "E-Containers Ecuador brinda a sus usuarios los mejores productos del sector y en el tiempo oportuno para poner en marcha el desarrollo de cada uno de sus proyectos, por eso las salas de ventas son fabricadas bajo los más altos estándares de calidad y con los mejores acabados.",
       img_0: "assets/imgs/contenedores/renault-0.jpg",
       img: "assets/imgs/contenedores/renault-1.jpg",
       img_1: "assets/imgs/contenedores/renault-2.jpg",
@@ -21,7 +21,7 @@ export class ContenedoresService {
     {
       nombre: "Biblioteca pública",
       bio_1: "Proyecto arquitectónico",
-      bio_2: "Dentro de los proyectos que ha realizado E-Containers Colombia, se presenta unabiblioteca pública, en compañía del Ministerio de Cultura, ubicada en la veredaSanta Helena del municipio de Mesetas, Meta. Esta consta de 5 contenedores, 3de 20 pies y 2 de 40 pies, los cuales fueron restaurados y adaptados para lasnecesidades del municipio en temas culturales. La biblioteca pública cuenta con paneles solares para su funcionamiento y elpróximo 6 de marzo será dotada de aproximadamente 1.400 libros, suministradospor las Bibliotecas Nacionales, con el objetivo de facilitar la circulación y el accesoa la información hacia un mayor conocimiento y fortalecer los procesos de lecturay escritura.",
+      bio_2: "Dentro de los proyectos que ha realizado E-Containers, se presenta unabiblioteca pública ,esta consta de 5 contenedores, 3de 20 pies y 2 de 40 pies, los cuales fueron restaurados y adaptados para lasnecesidades del municipio. La biblioteca pública cuenta con paneles solares para su funcionamiento y elpróximo 6 de marzo será dotada de aproximadamente 1.400 libros, suministrados por las Bibliotecas Nacionales, con el objetivo de facilitar la circulación y el accesoa la información hacia un mayor conocimiento y fortalecer los procesos de lecturay escritura.",
       img_0: "assets/imgs/contenedores/biblioteca-0.jpg",
       img: "assets/imgs/contenedores/biblioteca-1.jpg",
       img_1: "assets/imgs/contenedores/biblioteca-2.jpg",
@@ -97,7 +97,7 @@ export class ContenedoresService {
     {
       nombre: "Acqua",
       bio_1: "Sala de ventas",
-      bio_2: "Esta sala de ventas se encuentra ubicada en Valledupar, se caracteriza por tener un diseño moderno y funcional, por la calidad de sus materiales y acabados, y su ubicación estratégica.",
+      bio_2: "Esta sala de ventas se caracteriza por tener un diseño moderno y funcional, por la calidad de sus materiales y acabados, y su ubicación estratégica.",
       img_0: "assets/imgs/contenedores/acqua-0.jpg",
       img: "assets/imgs/contenedores/acqua-1.jpg",
       img_1: "assets/imgs/contenedores/acqua-2.jpg",
@@ -115,7 +115,7 @@ export class ContenedoresService {
       img_0: "assets/imgs/contenedores/refrigerado-0.jpg",
       img: "assets/imgs/contenedores/refrigerado-1.jpg",
       img_1: "assets/imgs/contenedores/refrigerado-2.jpg",
-      img_2: "assets/imgs/2.jpg",
+      img_2: "assets/imgs/refrigerado_plano.jpg",
       img_3: "assets/imgs/contenedores/refrigerado-3.jpg",
       img_4: "assets/imgs/contenedores/refrigerado-4.jpg",
       vinculo: "Más Información",
@@ -125,7 +125,7 @@ export class ContenedoresService {
     {
       nombre: "Mall Turístico (Ilarco)",
       bio_1: "Proyecto arquitectónico",
-      bio_2: "Ubicado en el km 13 vía al aeropuerto, en Pozos Colorados, Santa Marta. Un complejo de restaurantes, Zona C, hecho en 5 contenedores de 40 y 4 de 20 pies. Una idea auténtica e innovadora llena de coloridos ambientes que inspiran dinamismo y alegría, reflejando así los aires de la Costa Pacifica colombiana.",
+      bio_2: "Un complejo de restaurantes, Zona C, hecho en 5 contenedores de 40 y 4 de 20 pies. Una idea auténtica e innovadora llena de coloridos ambientes que inspiran dinamismo y alegría.",
       img_0: "assets/imgs/contenedores/santamarta-1.jpg",
       img: "assets/imgs/contenedores/santamarta-1.jpg",
       img_1: "assets/imgs/contenedores/santamarta-2.jpg",
@@ -138,7 +138,7 @@ export class ContenedoresService {
     {
       nombre: "Pontificia Universidad Javeriana",
       bio_1: "Proyecto arquitectónico",
-      bio_2: "La adecuación y el diseño de interiores hace parte de nuestros valores agregados en nuestros productos y servicios, un ambiente propicio según la función y la necesidad de cada uno de nuestros clientes a partir de arquitectura sustentable y renovable este complejo esta Ubicado en La Pontificia Universidad Javeriana - Bogota.",
+      bio_2: "La adecuación y el diseño de interiores hace parte de nuestros valores agregados en nuestros productos y servicios, un ambiente propicio según la función y la necesidad de cada uno de nuestros clientes a partir de arquitectura sustentable y renovable.",
       img_0: "assets/imgs/contenedores/bogota-1.jpg",
       img: "assets/imgs/contenedores/bogota-1.jpg",
       img_1: "assets/imgs/contenedores/bogota-2.jpg",

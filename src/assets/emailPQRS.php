@@ -19,8 +19,8 @@ $errors = '';
 
 
 
-    $email_from = "pqrs@econtainerscolombia.com";
-		$email_to = "pqrs@econtainerscolombia.com";
+    $email_from = "pqrs@econtainersecuador.com";
+		$email_to = "pqrs@econtainersecuador.com";
 		$email_subject = "Nuevo mensaje PQRS (Página Web) ";
 
 

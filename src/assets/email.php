@@ -23,231 +23,6 @@ if(empty($errors))
     $foto_comercial = '';
 
 
-	if($from_tipo == 'Contenedores Refrigerados'){
-
-
-
-    	$comercial = 'dmendez@econtainerscolombia.com';
-    	$nom_comercial = 'David Mendez';
-    	$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_3.png';
-
-    }
-
-       //if($from_tipo == 'Bodegas'){
-
-
-
-    	//$comercial = 'avila@econtainerscolombia.com';
-    	//$nom_comercial = 'Alejandra Vila';
-        //$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_1.png';
-
-  // }
-
-
-	if($from_tipo == 'Proyectos Especiales o Arquitectónicos' || $from_tipo == 'Oficinas' || $from_tipo == 'Salas de Ventas' || $from_tipo == 'Salas de Ventas' ){
-
-
-		if($from_ciudad  == 'Medellín' || $from_ciudad  == 'Cartagena' || $from_ciudad  == 'Santa Marta' || $from_ciudad  == 'Maicao' || $from_ciudad  == 'Riohacha' || $from_ciudad  == 'Valledupar' || $from_ciudad  == 'Río negro' || $from_ciudad  == 'Antioquia' | $from_ciudad  == 'Barranquilla'){
-
-
-				$comercial = 'pvalencia@econtainerscolombia.com';
-				$nom_comercial = 'Paula Valencia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_7.png';
-
-		}
-
-		if($from_ciudad  == 'Manizales' || $from_ciudad  == 'Pereira' || $from_ciudad  == 'Armenia' || $from_ciudad  == 'Cali' || $from_ciudad  == 'Jumbo' || $from_ciudad  == 'Pasto'){
-
-
-
-				$comercial = 'pvalencia@econtainerscolombia.com';
-				$nom_comercial = 'Paula Valencia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_7.png';
-
-
-		}
-
-    }
-
-
-
-
-
-
-        	if($from_tipo == 'Oficinas' || $from_tipo == 'Proyectos Especiales o Arquitectonicos' || $from_tipo == 'Bodegas' || $from_tipo == 'Salas de Ventas' ){
-
-    	if($from_ciudad  == 'Bogotá' || $from_ciudad  == 'Ibagué' || $from_ciudad  == 'Villavicencio' || $from_ciudad  == 'Bucaramanga'){
-
-		$aleatorio = rand ( 1 , 5);
-
-		if($aleatorio==1){
-				$comercial = 'fcastrodelrio@econtainerscolombia.com';
-				$nom_comercial = 'Ivan Castro del Rio';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_5.png';
-			}
-
-		if($aleatorio==2){
-				$comercial = 'fvargas@econtainerscolombia.com';
-				$nom_comercial = 'Frank Vargas';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_2.png';
-			}
-			if($aleatorio==3){
-				$comercial = 'dmarulanda@econtainerscolombia.com';
-				$nom_comercial = 'Diana Marulanda';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_4.png';
-			}
-
-			if($aleatorio==4){
-				$comercial = 'kgarcia@econtainerscolombia.com';
-				$nom_comercial = 'Karolina Garcia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_6.png';
-			}
-			if($aleatorio==5){
-				$comercial = 'dmendez@econtainerscolombia.com';
-				$nom_comercial = 'David Mendez';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_3.png';
-			}
-
-
-
-		}
-
-		if($from_ciudad  == 'Medellín' || $from_ciudad  == 'Cartagena' || $from_ciudad  == 'Santa Marta' || $from_ciudad  == 'Maicao' || $from_ciudad  == 'Riohacha' || $from_ciudad  == 'Valledupar' || $from_ciudad  == 'Río negro' || $from_ciudad  == 'Antioquia' | $from_ciudad  == 'Barranquilla'){
-
-
-
-
-				$comercial = 'pvalencia@econtainerscolombia.com';
-				$nom_comercial = 'Paula Valencia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_7.png';
-
-
-		}
-
-		if($from_ciudad  == 'Manizales' || $from_ciudad  == 'Pereira' || $from_ciudad  == 'Armenia' || $from_ciudad  == 'Cali' || $from_ciudad  == 'Jumbo' || $from_ciudad  == 'Pasto'){
-
-
-
-				$comercial = 'pvalencia@econtainerscolombia.com';
-				$nom_comercial = 'Paula Valencia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_7.png';
-
-
-		}
-
-    }
-
-
-	//ALEATORIO BOGOTA
-
-
-	//ALEATORIO OTROS
-	if($from_ciudad  == 'Otros'){
-
-		if($from_para == 'Compra' || $from_para == 'Alquiler'){
-
-			$aleatorio = rand ( 1 , 5);
-
-			if($aleatorio==1){
-				$comercial = 'fcastrodelrio@econtainerscolombia.com';
-				$nom_comercial = 'Ivan Castro del Rio';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_5.png';
-			}
-			if($aleatorio==2){
-				$comercial = 'pvalencia@econtainerscolombia.com';
-				$nom_comercial = 'Paula Valencia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_7.png';
-			}
-
-
-			if($aleatorio==3){
-				$comercial = 'fvargas@econtainerscolombia.com';
-				$nom_comercial = 'Frank Vargas';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_2.png';
-			}
-
-			if($aleatorio==4){
-				$comercial = 'dmarulanda@econtainerscolombia.com';
-				$nom_comercial = 'Diana Marulanda';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_4.png';
-
-		}
-		   if($aleatorio==5){
-				$comercial = 'kgarcia@econtainerscolombia.com';
-				$nom_comercial = 'Karolina Garcia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_6.png';
-
-		}
-
-
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		if($from_tipo == 'Proyectos Especiales o Arquitectónicos'){
-
-			$aleatorio = rand ( 1 , 5);
-
-			if($aleatorio==1){
-				$comercial = 'fcastrodelrio@econtainerscolombia.com';
-				$nom_comercial = 'Ivan Castro del Rio';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_5.png';
-			}
-			if($aleatorio==2){
-				$comercial = 'dmendez@econtainerscolombia.com';
-				$nom_comercial = 'David Mendez';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_4.png';
-			}
-			if($aleatorio==3){
-				$comercial = 'pvalencia@econtainerscolombia.com';
-				$nom_comercial = 'Paula Valencia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_7.png';
-			}
-
-			if($aleatorio==4){
-				$comercial = 'pvalencia@econtainerscolombia.com';
-				$nom_comercial = 'Paula Valencia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_7.png';
-
-		}
-
-		if($aleatorio==5){
-				$comercial = 'dmarulanda@econtainerscolombia.com';
-				$nom_comercial = 'Diana Marulanda';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_4.png';
-			}
-
-	        if($aleatorio==6){
-				$comercial = 'kgarcia@econtainerscolombia.com';
-				$nom_comercial = 'Karolina Garcia';
-				$foto_comercial = 'https://www.econtainerscolombia.com/info/jpg/[EC]_MailLanding_6.png';
-			}
-
-	}
-	}
 
 	if($nombre == 'NOMBRE' || $nombre == 'Nombre'){
 
@@ -294,7 +69,7 @@ if ( trim($from_name!='') || trim($from_email!='') || trim($from_celular!='') ||
 
 
     $email_from = "news@econtainers.com.co";
-		$email_to = "avila@econtainerscolombia.com, " . $comercial ." ";
+		$email_to = "info@econtainersecuador.com, ";
 		$email_subject = "Nuevo Lead pagina web: ";
 
 
@@ -319,9 +94,9 @@ if ( trim($from_name!='') || trim($from_email!='') || trim($from_celular!='') ||
 
 
 		// Correo enviado a lciente
-    	        $email_from2 = "E-Containers Colombia news@econtainerscolombia.com";
-		$email_to2 =  $from_email;
-		$email_subject2 = "Pronto estaremos en contacto";
+    // 	        $email_from2 = "E-Containers  news@econtainersecuador.com";
+		// $email_to2 =  $from_email;
+		// $email_subject2 = "Pronto estaremos en contacto";
 
 
 
@@ -329,16 +104,16 @@ if ( trim($from_name!='') || trim($from_email!='') || trim($from_celular!='') ||
 		$email_message2 .= $foto_comercial . "\n";
 		$email_message2 .= "se comunicara y le brindara la información necesaria.\n\n";*/
 
-		$email_message2 .= "<head><title></title></head><body><table><tr><td><img src='". $foto_comercial ."'></td></tr></table></body></html>";
+		// $email_message2 .= "<head><title></title></head><body><table><tr><td><img src='". $foto_comercial ."'></td></tr></table></body></html>";
 
 		// Ahora se envía el e-mail usando la función mail() de PHP
-		$headers2 = 'MIME-Version: 1.0' . "\r\n";
-		$headers2.= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-		$headers2.= 'From: '.$email_from2."\r\n".
-		'Reply-To: '.$email_from2."\r\n" .
-		'X-Mailer: PHP/' . phpversion();
-
-		@mail($email_to2, $email_subject2, $email_message2, $headers2);
+		// $headers2 = 'MIME-Version: 1.0' . "\r\n";
+		// $headers2.= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+		// $headers2.= 'From: '.$email_from2."\r\n".
+		// 'Reply-To: '.$email_from2."\r\n" .
+		// 'X-Mailer: PHP/' . phpversion();
+    //
+		// @mail($email_to2, $email_subject2, $email_message2, $headers2);
 
 
 

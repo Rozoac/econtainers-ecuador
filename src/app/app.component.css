@@ -386,9 +386,26 @@ bottom: 35px;
 
 
 @media screen and (max-width: 576px)  {
+
+  .derecha .btn {
+
+
+    border: 1px solid transparent;
+    padding: 0.2rem .5rem;
+    font-size: .8rem;
+
+}
+
+.dropdown-menu {
+
+    min-width: 10rem;
+    padding: .5rem 0.5rem;
+    margin: .125rem 0 0;
+    font-size: .8rem;
+}
 .logo {
     width: 250px;
-    max-width: 170px;
+    max-width: 160px;
 }
 
 .dropdown-menu {

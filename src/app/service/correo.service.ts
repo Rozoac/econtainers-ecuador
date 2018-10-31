@@ -28,6 +28,7 @@ export interface IMessageT {
   celular?: any,
   correo?: string,
   cargo?: string
+  archivo?: any
 }
 
 @Injectable()

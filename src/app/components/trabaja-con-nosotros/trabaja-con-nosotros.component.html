@@ -4,7 +4,7 @@
 
     <div class="texto-principal container">
       <h2 translate class="texto-1">TrabajaConNosotros</h2>
-      <h2 class="texto-2 hidden-sm-down">En E-Containers Colombia buscamos personas que se esfuerzan por lograr sus metas, de manera responsable y ética. Queremos su compromiso y creatividad para que juntos, podamos transformar la sociedad de una manera positiva. </h2>
+      <h2 class="texto-2 hidden-sm-down">En E-Containers Ecuador buscamos personas que se esfuerzan por lograr sus metas, de manera responsable y ética. Queremos su compromiso y creatividad para que juntos, podamos transformar la sociedad de una manera positiva. </h2>
     </div>
   </div>
 
@@ -39,7 +39,7 @@
         </h2>
         <p class="p-s9">Si estás interesado en aplicar a uno de nuestros cargos por favor déjanos tus datos:</p>
         <div class="container ">
-          <form [formGroup]="forma" (submit)="sendEmail(message)">
+          <form [formGroup]="forma" (submit)="sendEmail(message)" enctype="multipart/form-data">
             <div class="form-group row">
               <div class=" col-sm-12 col-lg-6">
                 <input name="nombre" formControlName="nombre" required type="text" class="form-control"  required placeholder="Nombre y Apellido" [(ngModel)]="message.nombre">
@@ -53,8 +53,8 @@
                 <input name="correo" formControlName="correo" required type="email" class="form-control"  placeholder="Correo Electronico" [(ngModel)]="message.correo">
               </div>
               <div class="form-group col-lg-6">
-                <select name="cargo" formControlName="cargo" required class="form-control" id="exampleSelect1"  [(ngModel)]="message.cargo">
-            <option>¿Cual cargo aplicas?</option>
+                <select name="cargo" formControlName="cargo" required class="form-control" [(ngModel)]="message.cargo">
+            <option disabled selected >¿Cual cargo aplicas?</option>
             <option>Comercial</option>
             <option>Administrativa</option>
             <option>Producción</option>
@@ -64,15 +64,15 @@
           </select>
               </div>
             </div>
-            <div class="form-group row">
+            <!-- <div class="form-group row">
               <div class=" col-lg-6">
                 <div class="form-group">
                    <label for="exampleInputFile">Adjunta tu hoja de vida</label>
-                   <input type="file" class="form-control-file" id="exampleInputFile" >
+                   <input type="file" name="archivo" class="form-control-file" [(ngModel)]="message.archivo">
                    <small id="fileHelp" class="form-text text-muted">Formato Word o PDF</small>
                  </div>          </div>
 
-            </div>
+            </div> -->
 
             <div class="submit-s9">
               <button [disabled]="!forma.valid" type="submit" class="btn btn-primary submit-1">ENVIAR</button>
